@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <!--ここはBootstrapのあれ-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="oshare.css">
+  <title>自己紹介ページ</title>
+</head>
+
+<div class="wrapper">
+  <!--ナビゲーション様-->
+  <nav class="navbar  navbar-light" style="background-color:#F5F5F5;">
+    <a class="navbar-brand pl-2 " href="index.html"><div class="self">Self＊introduction</div></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" >
+        <li class="nav-item active">
+          <a class="nav-link" href="#welcome">Welcome<span class="sr-only">(現位置)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#accordion">My favorite</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Form">My favorite</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron ">
+    <div class="container pb-5 pl-0" >
+      <h1 class="display-5">Self*introduction</h1>
+      <p class="lead pb-5 m-0"></p>
+    </div><!-- /.container -->
+  </div><!-- /.jumbotron -->
+
+  <!--はじめに-->
+  <div class="hallo">
+    <h2 class="title3" id="welcome">Welcome-ようこそ-</h2><br>
+    <h3>このサイトはプロジェクト演習で作成したWebページです。</h3><br>
+    <h3>野山に混じりて竹をとりつつよろづのことに使いけり。</h3><br>
+    <h3>名をば讃岐のみやつことなむいいける？</h3><br>
+    <h3>適当に書きすぎた...そろそろいい具合に文章が埋まったかな？</h3><br>
+    <div class="end">
+      <h3>このように私は適当な人間であります。</h3>
+    </div>
+  </div>
+
+  <!--ざっくり-->
+ <div class="hawayu">
+  　<h2 class="kon" id="About">About me -私はこんな人です-</h2>
+    <img src="images/otoge.png" alt="otoge-" class="otoge">
+    <img src="images/ramen_top_miso.png" alt="misora-men" class="miso">
+    <img src="images/tetuya.png" alt="hazinoooizinsei" class="tetuya">
+
+　<nav class="bun1">
+    <ul>
+      <li class="oto">寝ても覚めても音ゲーが好き</li>
+      <li class="mi">ラーメンはやっぱ味噌が好き</li>
+      <li>夏休みの宿題は徹夜で終わらす</li>
+    </ul>
+ 　</nav>
+ </div>
+
+  <!--自己満足ページ-->
+  <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="card text-center">
+      <div class="card-header" role="tab" id="headingOne">
+        <h5 class="mb-0">
+          <a class="text-body d-block p-3 m-n3　text-center" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+            <h2>My favorite -音ゲーについて紹介します-</h2>
+          </a>
+        </h5>
+      </div><!-- /.card-header -->
+
+      <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body text-left bg-light">
+          <!--コンテンツの中身 -->
+          <div class="syashin">
+            <img src="images/01.jpg" alt="画像が表示されます">
+             <div class="borute">
+                <h2>SOUND VOLTEX</h2>
+                <p>prod by KONAMI</p>
+                <p>楽曲にエフェクトをかける!?</p>
+                <p>DJ気分を味わえる新感覚音ゲー！</p>
+                <p><a href="https://p.eagate.573.jp/game/sdvx/v/p/top/" > >>公式サイトへのリンクはこちら！ </a></p>
+                <p>後日追記予定…？</p>
+            </div>
+        </div><!-- /.card-body -->
+      </div><!-- /.collapse -->
+    </div><!-- /.card -->
+  </div>
+</div>
+
+  <!--フォームのような何か-->
+  <form>
+    <h2 class="form" id="Form">Form-お気軽にお問合せ下さい-</h2>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Eメールアドレス</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Eメールアドレス">
+      <small class="text-muted">あなたのメールは他の誰とも共有しません。</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">感想記入</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="感想記入">
+    </div>
+    <button type="submit" class="btn btn-primary">送信する</button>
+  </form>
+
+
+  <!--ここはBootstrapのあれ-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</div>
+</html>

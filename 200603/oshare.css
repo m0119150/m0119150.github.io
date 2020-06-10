@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+html{
+
+}
+
+.wrapper {
+  margin: 0 auto 0 auto;
+  max-width: 1300px;
+}
+
+.jumbotron {
+  background-image: url("images/空.jfif");
+  background-size: 1300px 380px;
+  background-position: center 60%;
+  margin-bottom: 0;
+}
+
+.self{
+  padding-left: 40px;
+}
+
+.hallo {
+  background-color: #F5F5F5;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.title3{
+  padding-top: 50px;
+  margin-bottom: 15px;
+ }
+
+h3{
+  font-size:20px;
+  line-height: 1.1px;
+}
+.end{
+  padding-bottom: 60px;
+}
+
+.hawayu{
+  background-color: lightsteelblue;
+  padding-bottom: 60px;
+}
+
+/*konnnahitodesu*/
+.kon{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+img.otoge {
+  width:200px;
+  height: 200px;
+  display: inline;
+  margin: 20px 100px 20px 100px;
+}
+
+img.miso {
+  width:200px;
+  height: 200px;
+  display: inline;
+  margin: 20px 100px 20px 100px;
+}
+
+img.tetuya {
+  width:200px;
+  height: 200px;
+  display: inline;
+  margin: 20px 100px 20px 100px;
+}
+
+.bun1 ul{
+  list-style-type: none;
+}
+
+.bun1 li{
+  display: inline;
+  margin-left: 90px;
+  margin-right: 100px;
+}
+
+/*otoge-nituite*/
+.syashin{
+  font-size: 25px;
+  line-height: 8px;
+}
+.syashin h2{
+  padding-bottom: 8px;
+  font-size: 50px;
+}
+
+.syashin img{
+  float: left;
+  width:500px;
+  display: inline;
+  margin-left: 100px;
+ margin-right: 150px;
+  margin-bottom: 100px;
+}
+
+.borute{
+  line-height: 1em;
+}
+
+.button1{
+  padding-top: 10px;
+}
+
+form{
+  background-color: lightsteelblue;
+}
+
+.form{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.form-group{
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 20px;
+}
+
+.btn-primary{
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
