@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.nav{
+  background-color: lightsteelblue;
+}
+
+.col-12{
+  background-color: aquamarine;
+  height: 300px;
+}
+
+.hed-bt{
+  background-color: darkorange;
+}
+
+.inf{
+  background-color:crimson;
+}
+
+.tp{
+  background-color: thistle;
+}
+
+.btn{
+  background-color: crimson;
+}
+
+.sft{
+  background-color:thistle ;
+}
+.sft-d{
+  background-color: hotpink;
+}
+
+.new-inf{
+  background-color: darkorange;
+}
+
+.form{
+  background-color: azure;
+}
+
+.footer{
+  background-color: lightsteelblue;
+}
