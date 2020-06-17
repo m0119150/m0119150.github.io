@@ -1,0 +1,43 @@
+
+
+/*PC向け　レスポンシブ*/
+@media screen and (min-width: 481px){
+.wrapper{
+  align: center;
+}
+
+.navbar-nav  img{
+    width: 100%;
+  }
+.hello{
+  text-align: center;
+}
+.hello img{
+  display: inline;
+  width: 5%;
+}
+.hello-2{
+  margin:0 auto;
+  width: 60%;
+  align: center;
+  padding-bottom: 30px;
+}
+  .hello-3 h2{
+    padding-bottom: 30px;
+    padding-top: 10px;
+    text-align: center;
+  }
+.card img-thumbnail{
+  align: center;
+}
+
+.row img{
+  width: 40%;
+}
+}
+/*スマホ向け　レスポンシブ*/
+@media screen and (max-width: 481px){
+  .carousel slide image{
+    display: none;
+  }
+}
