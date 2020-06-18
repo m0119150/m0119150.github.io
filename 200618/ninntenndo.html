@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!--ここはBootstrapのあれ-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="nintendo.css">
+  <title>任天堂ホームページ</title>
+</head>
+
+<body>
+<!--ヘッダー-->
+<div class="container-fluid bg-white">
+
+  <!-- ナビゲーション様 -->
+  <nav class="nav row bg-white p-2">
+    <a class="col-2 nav-link" href="#">任天堂</a>
+    <a class="col-1 nav-link" href="#">リンク1</a>
+    <a class="col-1 nav-link" href="#">リンク2</a>
+    <a class="col-1 nav-link" href="#">リンク2</a>
+    <a class="col-1 nav-link" href="#">リンク2</a>
+    <a class="col-1 nav-link" href="#">リンク2</a>
+    <a class="col-5 nav-link text-right" href="#">リンク2</a>
+  </nav>
+
+  <!-- カルーセル -->
+  <div id="carouselExampleControls" class="row sl carousel slide" data-ride="carousel">
+    <!-- スライドさせる画像の設定 -->
+    <div class="carousel-inner">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/ko-hi.jpg" alt="第1スライド">
+        </div><!-- /.carousel-item -->
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/ko-hi2.jpg" alt="第2スライド">
+        </div><!-- /.carousel-item -->
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/ko-hi.jpg" alt="第3スライド">
+        </div><!-- /.carousel-item -->
+      </div><!-- /.carousel-inner -->
+    </div><!-- /.carousel-inner -->
+
+    <!-- スライドコントロールの設定 -->
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">前へ</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">次へ</span>
+    </a>
+  </div>
+
+  <!-- 各カルーセルヘのリンクボタン -->
+  <div class="hed-bt row p-2 bg-light mx-auto" style="width:1024px;">
+    <div class="btn rounded-0 bg-light col-2 col-md-offset-1">a</div>
+    <div class="btn rounded-0 bg-light col-2">a</div>
+    <div class="btn rounded-0 bg-light col-2">a</div>
+    <div class="btn rounded-0 bg-light col-2">a</div>
+    <div class="btn rounded-0 bg-light col-2">a</div>
+  </div>
+
+  <!--お知らせ -->
+  <div class="inf row mx-auto bg-light" style="width:1024px;">
+    <div class="col-1 bg-light">
+      <p>お知らせ</p>
+    </div>
+    <div class="col-6">
+      <table>
+        <tr>
+          <th>
+            2020.4.24
+          </th>
+          <td>
+            「ニンテンドーネットワークID」に対する不正ログイン発生のご報告と 「ニンテンドーアカウント」を安全にご利用いただくためのお願い
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            2020.2.6
+          </th>
+          <td>
+            新型コロナウイルス感染症による、Nintendo Switchなどの生産および出荷への影響について（お詫び）
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!--トピックス -->
+  <div class="tp row bg-white mx-auto" style="width:1024px;">
+    <div class="col-8 bg-light mx-auto" style="width:1024px;">
+      <div class="row">
+        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+      </div>
+     </div>
+ </div>
+
+  <!--トピックス記事一覧 -->
+  <div class="row mx-auto m-4" style="width:1024px;">
+  <div class="col-2 btn bg-danger rounded-0 mx-auto" style="width:1024px;">トピックス記事一覧</div>
+  </div>
+
+  <div class="sft row">
+    <div class="col-2 col-md-offset-1 card">a</div>
+    <div class="col-2 card">a</div>
+    <div class="col-2 card">a</div>
+    <div class="col-2 card">a</div>
+    <div class="col-2 card">a</div>
+  </div>
+  <div class="cnt row">
+    <div class="col-4 btn">a</div>
+  </div>
+
+  <div class="sft-d row">
+    <div class="col-2 btn">a</div>
+    <div class="col-2 btn">a</div>
+    <div class="col-2 btn">a</div>
+    <div class="col-2 btn">a</div>
+  </div>
+
+  <div class="new-inf row">
+    <div class="col-10 card">
+      a
+    </div>
+  <div class="col-2 btn">a</div>
+ </div>
+
+  <div class="form row p-2">
+    <div class="col-5">a</div>
+    <div class="col-7">a</div>
+  </div>
+
+  <div class="footer row p-2">
+    <div class="col-2">a</div>
+  </div>
+
+</div>
+<!--ここはBootstrapのあれ-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
