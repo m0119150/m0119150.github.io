@@ -4,33 +4,53 @@
   <!--ここはBootstrapのあれ-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <meta charset="UTF-8">
+
+  <!--Bootstrapのレスポンシブデザインのあれ-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>任天堂ホームページ</title>
 </head>
 
 <body>
-<!--ヘッダー-->
-<div class="container-fluid bg-white">
+  <!--ヘッダー-->
+  <div class="container-fluid bg-white">
 
   <!-- ナビゲーション様 -->
-  <nav class="nav row bg-white p-3">
-    <div class="col-10">
+  <nav class="nav row bg-white p-3 d-none d-xl-flex">
+    <div class="col-xl-10">
       <div class="row">
-          <a class="col-2 nav-link text-danger" href="#">任天堂</a>
-          <a class="col-2 nav-link text-secondary" href="#">リンク1</a>
-          <a class="col-2 nav-link text-secondary" href="#">リンク2</a>
-          <a class="col-2 nav-link text-secondary" href="#">リンク2</a>
-          <a class="col-2 nav-link text-secondary" href="#">リンク2</a>
-          <a class="col-2 nav-link text-secondary" href="#">リンク2</a>
+          <a class="col-xl-2 nav-link text-danger" href="#">任天堂</a>
+          <a class="col-xl-2 nav-link text-secondary" href="#">リンク1</a>
+          <a class="col-xl-2 nav-link text-secondary" href="#">リンク2</a>
+          <a class="col-xl-2 nav-link text-secondary" href="#">リンク2</a>
+          <a class="col-xl-2 nav-link text-secondary" href="#">リンク2</a>
+          <a class="col-xl-2 nav-link text-secondary" href="#">リンク2</a>
       </div>
-    </div>
-      <div class="col-2">
+     </div>
+
+      <div class="col-xl-2 col-md-2">
         <div class="row">
-          <a class="co1-4 nav-link text-secondary" href="#">リンク2</a>
-          <a class="co1-4 nav-link text-secondary" href="#">リンク2</a>
-          <a class="co1-4 nav-link text-secondary" href="#">リンク2</a>
+          <a class="co1-xl-4 col-md-4 nav-link text-secondary" href="#">リンク2</a>
+          <a class="co1-xl-4 col-md-4 nav-link text-secondary" href="#">リンク2</a>
+          <a class="co1-xl-4 col-md-4 nav-link text-secondary" href="#">リンク2</a>
         </div>
       </div>
   </nav>
+
+    <!-- ナビゲーション様２ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger d-flex d-xl-none">
+      <a class="navbar-brand" href="#">ブランド</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="ナビゲーションの切替">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">ホーム <span class="sr-only">(現位置)</span></a>
+          <a class="nav-item nav-link" href="#">リンク1</a>
+          <a class="nav-item nav-link" href="#">リンク2</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">無効</a>
+        </div>
+      </div>
+    </nav>
 
   <!-- カルーセル -->
   <div id="carouselExampleControls" class="row sl carousel slide" data-ride="carousel">
@@ -71,10 +91,10 @@
 
   <!--お知らせ -->
   <div class="inf row mx-auto bg-light pt-2 pb-4" style="width: auto;">
-      <div class="col-6 bg-transparent mx-auto" style="width: 1024px;">
+      <div class="col-lg-6 col-sm-12bg-transparent mx-auto" style="width: 1024px;">
         <div class="row">
-          <div class="col-3 bg-light pt-2"><h2>お知らせ</h2></div>
-          <div class="col-9 pt-2">
+          <div class="col-lg-3  col-sm-12 bg-light pt-2"><h2>お知らせ</h2></div>
+          <div class="col-lg-9 col-sm-12 pt-2">
             <table>
               <tr>
                  <th>
@@ -100,41 +120,41 @@
   </div>
 
   <!--トピックス -->
-  <div class="tp row bg-white mx-auto mt-5" style="width:1024px;">
-    <div class="col-10 mx-auto" style="width:1024px;"><h2 class="border-bottom border-danger pb-2">トピックス</h2></div>
-    <div class="col-10 bg-white mx-auto pt-3" style="width:1024px;">
+  <div class="tp row bg-white mx-auto mt-5" style="width:auto;">
+    <div class="col-lg-10 col-sm-12 col-12 mx-auto" style="width:auto;"><h2 class="border-bottom border-danger pb-2">トピックス</h2></div>
+    <div class="col-lg-10 col-sm-12 col-12 bg-white mx-auto pt-3" style="width:1024px;">
       <div class="row">
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 col-sm-4 col-6 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 col-sm-4 col-6 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 col-sm-4 col-6 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 card col-sm-4 col-6 bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 card col-sm-4 col-6 bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 card col-sm-4 col-6 bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 card col-sm-4 col-6 bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 card col-sm-4 col-6 bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
       </div>
      </div>
  </div>
 
   <!--トピックス記事一覧 -->
-  <div class="row mx-auto m-4" style="width:1024px;">
-  <div class="col-2 btn bg-danger rounded-0 mx-auto text-light mt-3 mb-5" style="width:1024px;">トピックス記事一覧</div>
+  <div class="row mx-auto m-4" style="width:auto;">
+  <div class="col-4 col-md-2 btn bg-danger rounded-0 mx-auto text-light mt-3 mb-5" style="width:1024px;">トピックス記事一覧</div>
   </div>
 
   <!--ゲームソフト-->
-  <div class="sft row　bg-white mx-auto" style="width:1024px;">
-    <div class="col-10 bg-white mx-auto" style="width:1024px;"><h2 class="border-bottom border-danger pb-2">ゲームソフト</h2>
+  <div class="sft row　bg-white mx-auto" style="width:auto;">
+    <div class="col-lg-10 col-sm-12 col-12 bg-white mx-auto" style="width:auto;"><h2 class="border-bottom border-danger pb-2">ゲームソフト</h2>
       <div class="row pt-3">
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
-        <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 col-sm-4 col-6 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 col-sm-4 col-6 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 col-sm-4 col-6 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
+        <div class="col-lg-3 col-sm-4 col-6 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
       </div>
     </div>
   </div>
 
   <!--ゲームソフト ページ送り-->
-  <nav aria-label="ページ送りの実例" class="mx-auto my-5" style="width:1024px;">
+  <nav aria-label="ページ送りの実例" class="mx-auto my-5" style="width:auto;">
       <ul class="pagination justify-content-center">
         <li class="page-item"><a class="page-link bg-danger text-light" href="#">前へ</a></li>
         <li class="page-item"><a class="page-link bg-danger text-light" href="#">1</a></li>
@@ -146,13 +166,13 @@
 
 
   <!--ハードウェア別ゲームソフト-->
-  <div class="sft-d row mx-auto my-4" style="width:1024px;">
-    <div class="col-10 mx-auto" style="width:1024px;">
+  <div class="sft-d row mx-auto my-4" style="width:auto;">
+    <div class="col-lg-10 col-sm-12 col-12 mx-auto" style="width:auto;">
       <div class="row">
-        <a class="col-3 btn bg-light rounded-0 py-3">aaa</a>
-        <a class="col-3 btn bg-light rounded-0 py-3">aaa</a>
-        <a class="col-3 btn bg-light rounded-0 py-3">aaa</a>
-        <a class="col-3 btn bg-light rounded-0 py-3">aaa</a>
+        <a class="col-lg-3 col-sm-3 btn col-4 bg-light rounded-0 py-3">aaa</a>
+        <a class="col-lg-3 col-sm-3 btn col-4 bg-light rounded-0 py-3">aaa</a>
+        <a class="col-lg-3 col-sm-3 btn col-4 bg-light rounded-0 py-3">aaa</a>
+        <a class="col-lg-3 col-sm-3 d-none d-sm-block btn bg-light rounded-0 py-3">aaa</a>
       </div>
   </div>
   </div>
@@ -160,10 +180,10 @@
   <!--更新情報-->
   <div class="new-inf row pt-2">
     <div class="inf row mx-auto bg-white" style="width: auto;">
-      <div class="col-10 bg-transparent mx-auto" style="width:1024px;">
-        <div class="row border-bottom border-danger pb-2"><h2>更新情報</h2>
+      <div class="col-lg-10 col-sm-12 col-12 bg-transparent mx-auto" style="width:auto;">
+        <div class="row border-bottom border-danger pb-2 ml-3"><h2>更新情報</h2>
           </div>
-          <div class="col-10 ml-3 pt-3">
+          <div class="col-lg-10 col-sm-12 col-12 ml-3 pt-3">
             <table>
               <tr>
                 <th>
@@ -207,15 +227,15 @@
     </div>
 
   <!--更新情報記事一覧-->
- <div class="row mx-auto m-4" style="width:1024px;">
-  <div class="col-2 btn bg-danger rounded-0 mx-auto text-light" style="width:1024px;">更新情報記事一覧</div>
-</div>
+  <div class="row mx-auto m-4" style="width:auto;">
+  <div class="col-lx-2 col-md-2 col-3 btn bg-danger rounded-0 mx-auto text-light" style="width:1024px;">更新情報記事一覧</div>
+  </div>
 
   <!--フォームへのリンク-->
- <div class="text-center py-3 border-top border-secondary pb-2">
-   <span class="pr-3 border-right border-secondary">お客様へのお知らせ </span>
+  <div class="text-center py-3 border-top border-secondary pb-2">
+      <span class="pr-3 border-right border-secondary">お客様へのお知らせ </span>
       <span class="pl-3">ニンテンドーアカウントの不正ログイン防止に関するお願い</span>
- </div>
+  </div>
 
   <!--フッター-->
   <div class="footer row bg-danger">
@@ -228,10 +248,10 @@
     </div>
   </div>
 
-</div>
-<!--ここはBootstrapのあれ-->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
-</html>
+  </div>
+  <!--ここはBootstrapのあれ-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+  </html>
