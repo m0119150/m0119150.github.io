@@ -4,7 +4,6 @@
   <!--ここはBootstrapのあれ-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="nintendo.css">
   <title>任天堂ホームページ</title>
 </head>
 
@@ -13,14 +12,24 @@
 <div class="container-fluid bg-white">
 
   <!-- ナビゲーション様 -->
-  <nav class="nav row bg-white p-2">
-    <a class="col-2 nav-link" href="#">任天堂</a>
-    <a class="col-1 nav-link" href="#">リンク1</a>
-    <a class="col-1 nav-link" href="#">リンク2</a>
-    <a class="col-1 nav-link" href="#">リンク2</a>
-    <a class="col-1 nav-link" href="#">リンク2</a>
-    <a class="col-1 nav-link" href="#">リンク2</a>
-    <a class="col-5 nav-link text-right" href="#">リンク2</a>
+  <nav class="nav row bg-white p-3">
+    <div class="col-10">
+      <div class="row">
+          <a class="col-2 nav-link text-danger" href="#">任天堂</a>
+          <a class="col-2 nav-link text-secondary" href="#">リンク1</a>
+          <a class="col-2 nav-link text-secondary" href="#">リンク2</a>
+          <a class="col-2 nav-link text-secondary" href="#">リンク2</a>
+          <a class="col-2 nav-link text-secondary" href="#">リンク2</a>
+          <a class="col-2 nav-link text-secondary" href="#">リンク2</a>
+      </div>
+    </div>
+      <div class="col-2">
+        <div class="row">
+          <a class="co1-4 nav-link text-secondary" href="#">リンク2</a>
+          <a class="co1-4 nav-link text-secondary" href="#">リンク2</a>
+          <a class="co1-4 nav-link text-secondary" href="#">リンク2</a>
+        </div>
+      </div>
   </nav>
 
   <!-- カルーセル -->
@@ -52,22 +61,20 @@
   </div>
 
   <!-- 各カルーセルヘのリンクボタン -->
-  <div class="hed-bt row bg-white mx-auto" style="width:auto">
-    <div class="btn rounded-0 bg-white col-2 col-md-offset-1">a</div>
-    <div class="btn rounded-0 bg-white col-2">a</div>
-    <div class="btn rounded-0 bg-white col-2">a</div>
-    <div class="btn rounded-0 bg-white col-2">a</div>
-    <div class="btn rounded-0 bg-white col-2">a</div>
-  </div>
+  <nav class="hed-bt row bg-white mx-auto m-0" style="width:auto">
+    <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col">大乱闘スマッシュブラザーズ</a>
+    <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col">大乱闘スマッシュブラザーズ</a>
+    <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col">大乱闘スマッシュブラザーズ</a>
+    <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col">大乱闘スマッシュブラザーズ</a>
+    <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col">大乱闘スマッシュブラザーズ</a>
+  </nav>
 
   <!--お知らせ -->
-  <div class="inf row mx-auto bg-light" style="width: auto;">
-      <div class="col-8 bg-transparent mx-auto" style="width:1024px;">
+  <div class="inf row mx-auto bg-light pt-2 pb-4" style="width: auto;">
+      <div class="col-6 bg-transparent mx-auto" style="width: 1024px;">
         <div class="row">
-          <div class="col-2 bg-light">
-             <h2>お知らせ</h2>
-         </div>
-          <div class="col-8">
+          <div class="col-3 bg-light pt-2"><h2>お知らせ</h2></div>
+          <div class="col-9 pt-2">
             <table>
               <tr>
                  <th>
@@ -93,9 +100,9 @@
   </div>
 
   <!--トピックス -->
-  <div class="tp row bg-white mx-auto" style="width:1024px;">
-    <div class="col-8 mx-auto" style="width:1024px;"><h2>トピックス</h2></div>
-    <div class="col-8 bg-light mx-auto" style="width:1024px;">
+  <div class="tp row bg-white mx-auto mt-5" style="width:1024px;">
+    <div class="col-10 mx-auto" style="width:1024px;"><h2 class="border-bottom border-danger pb-2">トピックス</h2></div>
+    <div class="col-10 bg-white mx-auto pt-3" style="width:1024px;">
       <div class="row">
         <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
         <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
@@ -111,13 +118,13 @@
 
   <!--トピックス記事一覧 -->
   <div class="row mx-auto m-4" style="width:1024px;">
-  <div class="col-2 btn bg-danger rounded-0 mx-auto" style="width:1024px;">トピックス記事一覧</div>
+  <div class="col-2 btn bg-danger rounded-0 mx-auto text-light mt-3 mb-5" style="width:1024px;">トピックス記事一覧</div>
   </div>
 
   <!--ゲームソフト-->
   <div class="sft row　bg-white mx-auto" style="width:1024px;">
-    <div class="col-8 bg-light mx-auto" style="width:1024px;">
-      <div class="row">
+    <div class="col-10 bg-white mx-auto" style="width:1024px;"><h2 class="border-bottom border-danger pb-2">ゲームソフト</h2>
+      <div class="row pt-3">
         <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
         <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
         <div class="col-3 card bg-light"><img class="card img-thumbnail" src="images/ramen_top_miso.png" alt="img">味噌ラーメンは美味しい</div>
@@ -126,31 +133,99 @@
     </div>
   </div>
 
-  <div class="cnt row">
-    <div class="col-4 btn">a</div>
+  <!--ゲームソフト ページ送り-->
+  <nav aria-label="ページ送りの実例" class="mx-auto my-5" style="width:1024px;">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link bg-danger text-light" href="#">前へ</a></li>
+        <li class="page-item"><a class="page-link bg-danger text-light" href="#">1</a></li>
+        <li class="page-item"><a class="page-link bg-danger text-light" href="#">2</a></li>
+        <li class="page-item"><a class="page-link bg-danger text-light" href="#">3</a></li>
+        <li class="page-item"><a class="page-link bg-danger text-light" href="#">次へ</a></li>
+      </ul>
+      </nav>
+
+
+  <!--ハードウェア別ゲームソフト-->
+  <div class="sft-d row mx-auto my-4" style="width:1024px;">
+    <div class="col-10 mx-auto" style="width:1024px;">
+      <div class="row">
+        <a class="col-3 btn bg-light rounded-0 py-3">aaa</a>
+        <a class="col-3 btn bg-light rounded-0 py-3">aaa</a>
+        <a class="col-3 btn bg-light rounded-0 py-3">aaa</a>
+        <a class="col-3 btn bg-light rounded-0 py-3">aaa</a>
+      </div>
+  </div>
   </div>
 
-  <div class="sft-d row">
-    <div class="col-2 btn">a</div>
-    <div class="col-2 btn">a</div>
-    <div class="col-2 btn">a</div>
-    <div class="col-2 btn">a</div>
-  </div>
+  <!--更新情報-->
+  <div class="new-inf row pt-2">
+    <div class="inf row mx-auto bg-white" style="width: auto;">
+      <div class="col-10 bg-transparent mx-auto" style="width:1024px;">
+        <div class="row border-bottom border-danger pb-2"><h2>更新情報</h2>
+          </div>
+          <div class="col-10 ml-3 pt-3">
+            <table>
+              <tr>
+                <th>
+                  2020.4.24
+                </th>
+                <td >
+                  「ニンテンドーネットワークID」に対する不正ログイン発生のご報告と 「ニンテンドーアカウント」を安全にご利用いただくためのお願い
+                </td>
+              </tr>
 
-  <div class="new-inf row">
-    <div class="col-10 card">
-      a
+              <tr>
+                <th>
+                  2020.2.6
+                </th>
+                <td>
+                  新型コロナウイルス感染症による、Nintendo Switchなどの生産および出荷への影響について（お詫び）
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  2020.4.24
+                </th>
+                <td>
+                  「ニンテンドーネットワークID」に対する不正ログイン発生のご報告と 「ニンテンドーアカウント」を安全にご利用いただくためのお願い
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  2020.2.6
+                </th>
+                <td>
+                  新型コロナウイルス感染症による、Nintendo Switchなどの生産および出荷への影響について（お詫び）
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
-  <div class="col-2 btn">a</div>
+
+  <!--更新情報記事一覧-->
+ <div class="row mx-auto m-4" style="width:1024px;">
+  <div class="col-2 btn bg-danger rounded-0 mx-auto text-light" style="width:1024px;">更新情報記事一覧</div>
+</div>
+
+  <!--フォームへのリンク-->
+ <div class="text-center py-3 border-top border-secondary pb-2">
+   <span class="pr-3 border-right border-secondary">お客様へのお知らせ </span>
+      <span class="pl-3">ニンテンドーアカウントの不正ログイン防止に関するお願い</span>
  </div>
 
-  <div class="form row p-2">
-    <div class="col-5">a</div>
-    <div class="col-7">a</div>
-  </div>
-
-  <div class="footer row p-2">
-    <div class="col-2">a</div>
+  <!--フッター-->
+  <div class="footer row bg-danger">
+    <div class="col-8 mx-auto" style="width: 1024px;">
+      <div class="row">
+        <div class="col-3">
+          <p class="text-light py-2">Nintendo</p>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>
