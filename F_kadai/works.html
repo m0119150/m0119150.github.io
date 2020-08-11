@@ -6,63 +6,77 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/profile.css">
   <title>works</title>
-</head>
-<body>
 
+  <!--Bootstrapのレスポンシブデザインのあれ-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="padding-top:4.5rem">
 <div class="container-fluid bg-transparent p-0">
 
-  <nav class="navbar navbar-expand-lg navbar-light" style="font-size:30px;">
-    <a class="navbar-brand" href="home.html" style="font-size:30px;">PORTFOLIO</a>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="font-size:30px;">
+    <a class="navbar-brand" href="home.html" style="font-size:30px; border-bottom:solid; border-bottom-color:#00bbdd;">PORTFOLIO</a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="profile.html">ABOUT</a>
+          <a class="nav-link" href="profile.html" style="border-bottom:solid; border-bottom-color:#00bbdd;">ABOUT</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="works.html">WORKS</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="works.html" style="border-bottom:solid; border-bottom-color:#00bbdd;">WORKS</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">CONTACT</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html" style="border-bottom:solid; border-bottom-color:#00bbdd;">CONTACT</a>
         </li>
       </ul>
     </div>
   </nav>
 
-<div class="row justify-content-center">
-<div class="col-10 text-center pt-5">
-  <div class="pt-5 tb-5 d-flex align-items-center justify-content-center" style="height: 600px;">
-    <em style="font-size: 100px;">WORKS.</em>
-  </div>
-</div>
-</div>
-
-<!--ボタン -->
-<nav class="hed-bt row bg-light mx-auto m-0" style="width:auto">
-  <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col"><strong>Webサイト制作</strong></a>
-  <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col"><strong>デザイン関係</strong></a>
-  <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col"><strong>プログラミング</strong></a>
-</nav>
-
-  <div class="row">
-    <div class="col-12 text-left p-5" style="background-color:#f5f5f5">
-
-      <h1 class="p-3">Webサイト制作</h1>
-        <div class="row justify-content-center">
-          <figure><div class="m-2 col-xl-3 img-fluid"><img src="images/localhost_63342_WebstormProjects_m0119150.github.io_200701_blog.html__ijt=bmd6peid4vs9fl2lb884erhj12.png" alt="#"></div></figure>
-          <figure><div class="m-2 col-xl-3 img-fluid"><img src="images/localhost_63342_WebstormProjects_m0119150.github.io_200618_ninntenndo.html__ijt=n67ae0c3kks2kbhieabr89oblr.png" alt="#"></div></figure>
-          <figure> <div class="m-2 col-xl-3"><img src="images/localhost_63342_WebstormProjects_m0119150.github.io_200610_index.html__ijt=qdarorpnjvs8ilmtjavo9f0r5.png" alt="#"></div></figure>
-          <figure><div class="m-2 col-xl-3"><img style="width: 400px; height: 600px;" src="images/_C__Users_m011915090_WebstormProjects_hebinorobin_%25E3%2583%2598%25E3%2583%2593%25E3%2581%25AE%25E3%2583%25AD%25E3%2583%2593%25E3%2583%25B3.html.png" alt="#"></div></figure>
-       </div>
-
-      <h1 class="p-3">タイポグラフィー</h1>
-      <div class="row justify-content-center">
-        <figure><div class="m-2 col-xl-3 img-fluid"><img src="images/M0119150%20_01._page-0001.jpg" alt="#"></div></figure>
+  <div class="row  justify-content-center ">
+    <div class="col-xl-10 col-12 text-center pt-5">
+      <div class="pt-5 tb-5 d-flex align-items-center justify-content-center" style="height: 600px;">
+      <em style="font-size: 100px;">WORKS.</em>
       </div>
-
     </div>
+  </div>
+
+      <!--ボタン -->
+      <nav class="hed-bt row bg-light mx-auto m-0" style="width:auto">
+        <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col" href="#web"><strong>Webサイト制作</strong></a>
+        <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col" href="#design"><strong>デザイン関係</strong></a>
+        <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col" href="#pro"><strong>プログラミング</strong></a>
+      </nav>
+
+      <div class="row mx-auto">
+        <div class="col-12 text-left p-5" style="background-color:#f5f5f5">
+
+          <h1 class="p-3" id="web">Webサイト制作</h1>
+            <div class="row justify-content-center">
+              <figure><div class="m-2 col-xl-3 col-12 img-fluid"><a href="blog.html"><img style="width: auto;" src="images/localhost_63342_WebstormProjects_m0119150.github.io_200701_blog.html__ijt=bmd6peid4vs9fl2lb884erhj12.png" alt="#"></a></div></figure>
+              <figure><div class="m-2 col-xl-3 col-12 img-fluid"><img style="width: auto;" src="images/localhost_63342_WebstormProjects_m0119150.github.io_200618_ninntenndo.html__ijt=n67ae0c3kks2kbhieabr89oblr.png" alt="#"></div></figure>
+              <figure> <div class="m-2 col-12 col-xl-3"><img style="width: auto;" src="images/localhost_63342_WebstormProjects_m0119150.github.io_200610_index.html__ijt=qdarorpnjvs8ilmtjavo9f0r5.png" alt="#"></div></figure>
+              <figure><div class="m-2 col-xl-3 col-12"><img style="width:auto;" src="images/_C__Users_m011915090_WebstormProjects_hebinorobin_%25E3%2583%2598%25E3%2583%2593%25E3%2581%25AE%25E3%2583%25AD%25E3%2583%2593%25E3%2583%25B3.html.png" alt="#"></div></figure>
+           </div>
+
+          <h1 class="p-3" id="design">デザイン関係</h1>
+          <div class="row justify-content-center">
+            <figure><div class="m-2 col-xl-3 img-fluid"><img src="images/M0119150%20_01._page-0001.jpg" alt="#"></div></figure>
+          </div>
+
+          <h1 class="p-3" id="pro">プログラミング</h1>
+          <div class="row justify-content-center">
+            <figure><div class="m-2 col-xl-3 img-fluid"><img src="images/_C__Users_m011915090_WebstormProjects_Copy-Charange_JMOOC_stockList.html.png" alt="#"></div></figure>
+            <figure><div class="m-2 col-xl-3 img-fluid"></div><img src="images/あ.JPG" alt="#"></figure>
+          </div>
+
+          <div class="copyright text-center bg-transparent" style="">
+            <p>Copyright(C) 2020 ERI SHIRAISI ALL Rights Reservered.</p>
+          </div>
+
+        </div>
+
   </div>
 
 
