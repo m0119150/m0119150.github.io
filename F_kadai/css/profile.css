@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+ background: #0bd url("images/pexels-flors-q-685080.jpg") no-repeat;
+ background-blend-mode: lighten;
+ background-size: cover;
+ line-height: 2em;
+}
+
+a{
+ color: black;
+}
+
+a:hover {
+ color: #FF7851;
+}
+
+ul{
+ list-style-type: none;
+}
