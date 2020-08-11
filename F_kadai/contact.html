@@ -3,14 +3,14 @@
 <head>
   <!--ここはBootstrapのあれ-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/profile.css">
   <meta charset="UTF-8">
   <title>contact</title>
 
 </head>
-<body>
-<div class="container-fluid bg-white p-0">
-  <nav class="navbar navbar-expand-lg navbar-light" style="font-size:30px;">
+<body class="padding-top:4.5rem">
+<div class="container-fluid p-0">
+  <nav class="navbar navbar-expand-lg fixed-top" style="font-size:30px;">
     <a class="navbar-brand" href="home.html" style="font-size:30px; border-bottom:solid; border-bottom-color:#00bbdd;">PORTFOLIO</a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
       <span class="navbar-toggler-icon"></span>
@@ -30,8 +30,16 @@
     </div>
   </nav>
 
-  <div class="col-12 text-center p-5" style="background-color: #ffc64e">
-    <h1>SNS</h1>
+  <div class="row mx-auto justify-content-center">
+
+    <div class="col-10 text-center pt-5">
+      <div class="pt-5 tb-5 d-flex align-items-center justify-content-center" style="height: 600px;">
+        <em style="font-size: 100px;">CONTACT.</em>
+      </div>
+    </div>
+
+  <div class="col-11 text-left p-5" style="background-color:#f5f5f5">
+    <h1 class="pl-5 waha">SNS</h1>
     <ul>
       <li><strong>LINE:</strong><a href="https://jyuken.teu.ac.jp/jyuken/index.html?utm_source=Google&utm_medium=SEM&utm_campaign=Google2020Digitalopen&gclid=EAIaIQobChMI7Kn4zLuE6wIVBVVgCh2NlQGvEAAYASAAEgI08fD_BwE">@erisirai4</a></li>
       <li><strong>Facebook:</strong><a href="https://jyuken.teu.ac.jp/jyuken/index.html?utm_source=Google&utm_medium=SEM&utm_campaign=Google2020Digitalopen&gclid=EAIaIQobChMI7Kn4zLuE6wIVBVVgCh2NlQGvEAAYASAAEgI08fD_BwE">@erisi221</a></li>
@@ -39,16 +47,16 @@
       <li><strong>Instagra:</strong><a href="https://jyuken.teu.ac.jp/jyuken/index.html?utm_source=Google&utm_medium=SEM&utm_campaign=Google2020Digitalopen&gclid=EAIaIQobChMI7Kn4zLuE6wIVBVVgCh2NlQGvEAAYASAAEgI08fD_BwE">@erisira000</a></li>
     </ul>
   </div>
-</div>
 
-<div class="card card-body bg-dark">
+<div class="card card-body col-11 p-5" style="background-color:#f5f5f5" >
+  <h1>お問い合わせ</h1>
   <form>
-    <div class="form-group text-white">
+    <div class="form-group text-dark">
       <label for="exampleFormControlInput1">Eメールアドレス</label>
       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
-    <div class="form-group text-white">
-      <label >選択の例</label>
+    <div class="form-group text-dark">
+      <label >このサイトは良かったですか？</label>
       <select class="form-control " id="exampleFormControlSelect1">
         <option>1</option>
         <option>2</option>
@@ -57,23 +65,18 @@
         <option>5</option>
       </select>
     </div>
-    <div class="form-group text-white">
-      <label for="exampleFormControlSelect2">複数選択の例</label>
-      <select multiple class="form-control" id="exampleFormControlSelect2">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </div>
-    <div class="form-group text-white">
-      <label for="exampleFormControlTextarea1">テキストエリアの例</label>
+
+    <div class="form-group text-dark">
+      <label for="exampleFormControlTextarea1">感想など</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
   </form>
 </div>
-
+</div>
+  <div class="copyright text-center bg-transparent" style="">
+    <p>Copyright(C) 2020 ERI SHIRAISI ALL Rights Reservered.</p>
+  </div>
+</div>
 </body>
 <!--ここはBootstrapのあれ-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
