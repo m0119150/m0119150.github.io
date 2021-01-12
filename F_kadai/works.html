@@ -52,13 +52,13 @@
       <div class="row">
         <div class="col-12 text-left p-5 justify-content-center" style="background-color:#f5f5f5">
           <h3 class="text-center p-5">作品のスクリーンショットです。クリックすると詳細をご覧いただけます。</h3>
-          <h1 class="p-3" id="web" style="border-bottom:solid; border-bottom-color:#00bbdd;">Webサイト制作</h1>
+          <h1 class="p-3 element js-animation" id="web" style="border-bottom:solid; border-bottom-color:#00bbdd;">Webサイト制作</h1>
             <div class="row justify-content-center pt-3">
               <figure>
                 <div class="m-2 col-xl-3 col-12 img-fluid">
                   <img style="width:auto;" src="images/localhost_63342_WebstormProjects_m0119150.github.io_200701_blog.html__ijt=bmd6peid4vs9fl2lb884erhj12.png" data-toggle="modal" data-target="#staticBackdrop" alt="#">
                 </div>
-                <figcaption class="text-center">ブログサイト</figcaption>
+                <figcaption class="text-center element">ブログサイト</figcaption>
               </figure>
 
 
@@ -235,6 +235,31 @@
 
 </div>
 </div>
+<script src="_common/scripts/jquery-3.4.1.min.js"></script>
+<script>
+  /**
+   * 到達したら要素を表示させる
+   */
+  function showElementAnimation() {
+
+    var element = document.getElementsByClassName('js-animation');
+    if(!element) return; // 要素がなかったら処理をキャンセル
+
+    var showTiming = window.innerHeight > 768 ? 200 : 40; // 要素が出てくるタイミングはここで調整
+    var scrollY = window.pageYOffset;
+    var windowH = window.innerHeight;
+
+    for(var i=0;i<element.length;i++) { var elemClientRect = element[i].getBoundingClientRect(); var elemY = scrollY + elemClientRect.top; if(scrollY + windowH - showTiming > elemY) {
+      element[i].classList.add('is-show');
+    } else if(scrollY + windowH < elemY) {
+      // 上にスクロールして再度非表示にする場合はこちらを記述
+      element[i].classList.remove('is-show');
+    }
+    }
+  }
+  showElementAnimation();
+  window.addEventListener('scroll', showElementAnimation);
+</script>
 </body>
 <!--ここはBootstrapのあれ-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
