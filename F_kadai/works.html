@@ -45,7 +45,7 @@
       <!--ボタン -->
       <nav class="hed-bt row bg-light m-0" style="width:auto">
         <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col" href="#web"><strong>Webサイト制作</strong></a>
-        <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col" href="#design"><strong>デザイン関係</strong></a>
+        <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col" href="#design"><strong>動画制作</strong></a>
         <a class="btn py-3 btn-outline-secondary rounded-0 bg-white col" href="#pro"><strong>プログラミング</strong></a>
       </nav>
 
@@ -180,19 +180,34 @@
             </ul>
           </div>
 
+
+
           <h1 class="p-3" id="design" style="border-bottom:solid; border-bottom-color:#00bbdd;">動画制作</h1>
           <div class="row justify-content-center pt-3">
             <figure>
-              <div class="m-2 col-xl-3 img-fluid">
-                <video class="js-animation" style="width:auto;" src="images/４DX.mp4"></video>
+              <div class="m-2 col-xl-3 col-12 img-fluid">
+                <iframe style="display:flex" class="js-animation" width="560" height="315" src="https://www.youtube.com/embed/4xPJc7d6xJ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <figcaption class="text-center">タイポグラフィ</figcaption>
+              <figcaption class="text-center">新たな生活スタイルを提供するサービス紹介PV</figcaption>
+            </figure>
+
+
+            <figure>
+              <div class="m-2 col-xl-3 col-12 img-fluid">
+                <iframe style="display:flex" class="js-animation" width="560" height="315" src="https://www.youtube.com/embed/BeqIRK7230s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <figcaption class="text-center">日常生活機能のUX向上デザイン商品紹介PV</figcaption>
+            </figure>
+
+            <figure>
+              <div class="m-2 col-xl-3 col-12 img-fluid">
+                <iframe class="js-animation" width="560" height="315" src="https://www.youtube.com/embed/Y72-IjMgmUs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+              <figcaption class="text-center">UXの高い場所を紹介するPV</figcaption>
             </figure>
           </div>
-
           <div class="text-right">
             <ul class="list-inline">
-              <li class="list-inline-item" style="border-bottom:solid; border-bottom-color:#00bbdd;"><h3>#PowerPoint</h3></li>
+              <li class="list-inline-item" style="border-bottom:solid; border-bottom-color:#00bbdd;"><h3>#AdobePremiaPro</h3></li>
             </ul>
           </div>
 
@@ -200,14 +215,14 @@
           <div class="row justify-content-center pt-3">
             <figure>
               <div class="m-2 col-xl-3 img-fluid">
-                <img style="width:auto;" src="images/与那国島.png" alt="#">
+                <img class="js-animation" style="width:auto;" src="images/与那国島.png" alt="#">
               </div>
               <figcaption class="text-center">PHPを使った在庫管理システム</figcaption>
             </figure>
 
             <figure>
               <div class="m-2 col-xl-3 img-fluid">
-                <img style="width:auto;" src="images/あ.JPG" alt="#">
+                <img class="js-animation" style="width:auto;" src="images/あ.JPG" alt="#">
               </div>
               <figcaption class="text-center">processingを使ったアート表現</figcaption>
             </figure>
@@ -235,6 +250,7 @@
 
 </div>
 </div>
+
 <script src="_common/scripts/jquery-3.4.1.min.js"></script>
 <script>
   /**
@@ -259,6 +275,7 @@
   }
   showElementAnimation();
   window.addEventListener('scroll', showElementAnimation);
+
 </script>
 </body>
 <!--ここはBootstrapのあれ-->
